@@ -1,23 +1,43 @@
-import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Gallery from './components/Gallery';
-import Join from './components/Join';
-import Events from './components/Events';
-import Footer from './components/Footer';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Gallery from "./components/Gallery";
+import AllGallery from "./components/AllGallery";
+import Join from "./components/Join";
+import Events from "./components/Events";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <About />
-      <Gallery />
-      <Join />
-      <Events />
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen">
+        <Header />
+
+        <Routes>
+          {/* Home page with sections */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <About />
+                <Gallery />
+                <Join />
+                <Events />
+              </>
+            }
+          />
+
+          {/* Full gallery page */}
+          <Route path="/all-gallery" element={<AllGallery />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

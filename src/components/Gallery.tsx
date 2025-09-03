@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Camera, Heart, MessageCircle } from 'lucide-react';
 
 const galleryImages = [
@@ -99,10 +100,15 @@ export default function Gallery() {
           ))}
         </div>
 
+
+
         <div className="text-center mt-12">
-          <button className="bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+          <Link
+            to="/all-gallery"
+            className="bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105"
+          >
             View More Photos
-          </button>
+          </Link>
         </div>
       </div>
     </section>
