@@ -14,12 +14,16 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm z-50 border-b border-slate-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">S</span>
+            <div className="flex items-center space-x-2">
+              <div className="w-200 h-14 flex items-center justify-center">
+                <img 
+                  src="src/components/Media/Logo.png"
+                  alt="SlugsOnTwoWheels Logo" 
+                  className="w-full h-full object-contain scale-125"
+                />
+              </div>
+              <span className="text-white font-bold text-xl">SlugsOnTwoWheels</span>
             </div>
-            <span className="text-white font-bold text-xl">SlugsOnTwoWheels</span>
-          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">

@@ -3,7 +3,7 @@ import { Heart, Mountain, Users2 } from 'lucide-react';
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white">
+<section id="about" className="pt-32 pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
@@ -54,14 +54,12 @@ export default function About() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.pexels.com/photos/1119796/pexels-photo-1119796.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="src\components\Media\all_bikers.png"
                 alt="Group photo placeholder"
                 className="w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
               <div className="absolute bottom-4 left-4 text-white">
-                <p className="font-semibold">Group Photo Goes Here</p>
-                <p className="text-sm opacity-90">SlugsOnTwoWheels Family</p>
               </div>
             </div>
             

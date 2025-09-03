@@ -9,15 +9,21 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">S</span>
+              <div className="w-14 h-14 flex items-center justify-center">
+                <img 
+                  src="src/components/Media/Logo.png"
+                  alt="SlugsOnTwoWheels Logo" 
+                  className="w-full h-full object-contain scale-125"
+                />
               </div>
               <span className="text-white font-bold text-xl">SlugsOnTwoWheels</span>
             </div>
+
             <p className="text-slate-400 leading-relaxed max-w-sm">
               UC Santa Cruz's premier motorcycle community. Riding together, exploring together, growing together.
             </p>
           </div>
+
 
           {/* Contact Info */}
           <div>
@@ -25,11 +31,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-amber-400" />
-                <span className="text-slate-300">slugsontwowheels@ucsc.edu</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-amber-400" />
-                <span className="text-slate-300">Student Group Office</span>
+                <span className="text-slate-300">SlugsOnTwoWheels@ucsc.edu</span>
               </div>
             </div>
           </div>
@@ -39,22 +41,26 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.instagram.com/slugsontwowheels/"
+                target="_blank" 
                 className="w-12 h-12 bg-white/10 hover:bg-amber-500 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
               >
                 <Instagram className="w-6 h-6" />
               </a>
+
+
+                  {/* Discord */}
               <a 
-                href="#" 
-                className="w-12 h-12 bg-white/10 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
-              >
-                <Facebook className="w-6 h-6" />
-              </a>
-              <a 
-                href="#" 
-                className="w-12 h-12 bg-white/10 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
-              >
-                <Mail className="w-6 h-6" />
+                href="https://discord.gg/9UhDwBUrhV" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-white/10 hover:bg-indigo-500 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                >
+                <img 
+                  src="src/components/Media/Discord-Icon.svg" 
+                  alt="Discord" 
+                  className="w-6 h-6"
+                />
               </a>
             </div>
           </div>

@@ -4,34 +4,32 @@ import { Calendar, MapPin, Users, Clock, ArrowRight } from 'lucide-react';
 const events = [
   {
     id: 1,
-    title: 'Weekend Coastal Cruise',
-    date: 'Jan 20, 2025',
-    time: '9:00 AM',
-    location: 'UCSC Campus → Santa Cruz Boardwalk',
-    description: 'Leisurely ride along the coast with stops at local cafes',
-    attendees: 12,
-    difficulty: 'Beginner Friendly'
+    title: 'UCSC Cornucopia',
+    date: 'Sep 22, 2025',
+    time: '4:00 PM',
+    location: 'UCSC Campus East Field',
+    description: 'Stop by our unofficial booth and meet some of the crew',
+    difficulty: 'Everyone'
   },
-  {
-    id: 2,
-    title: 'Mountain Adventure Rally',
-    date: 'Jan 27, 2025',
-    time: '8:00 AM',
-    location: 'UCSC → Big Sur',
-    description: 'Epic mountain roads through redwood forests',
-    attendees: 8,
-    difficulty: 'Intermediate'
-  },
-  {
-    id: 3,
-    title: 'Night Lights City Tour',
-    date: 'Feb 3, 2025',
-    time: '6:00 PM',
-    location: 'Campus → Downtown Santa Cruz',
-    description: 'Evening ride through the city lights',
-    attendees: 15,
-    difficulty: 'All Levels'
-  }
+  // {
+  //   id: 2,
+  //   title: 'Mountain Adventure Rally',
+  //   date: 'Jan 27, 2025',
+  //   time: '8:00 AM',
+  //   location: 'UCSC → Big Sur',
+  //   description: 'Epic mountain roads through redwood forests',
+  //   difficulty: 'Intermediate'
+  // },
+  // {
+  //   id: 3,
+  //   title: 'Night Lights City Tour',
+  //   date: 'Feb 3, 2025',
+  //   time: '6:00 PM',
+  //   location: 'Campus → Downtown Santa Cruz',
+  //   description: 'Evening ride through the city lights',
+  //   attendees: 15,
+  //   difficulty: 'All Levels'
+  // }
 ];
 
 export default function Events() {
@@ -48,7 +46,15 @@ export default function Events() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+
+
+
+              {/* Upcoming Events */}
+
+<div className="flex flex-wrap justify-center gap-8">
+
           {events.map((event) => (
             <div 
               key={event.id}
@@ -78,30 +84,54 @@ export default function Events() {
                 <p className="text-slate-700 mb-4 leading-relaxed">{event.description}</p>
 
                 <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center space-x-2">
-                    <Users className="w-4 h-4 text-emerald-500" />
-                    <span className="text-sm text-slate-600">{event.attendees} going</span>
-                  </div>
                   <span className="text-xs px-3 py-1 bg-blue-100 text-blue-800 rounded-full font-medium">
                     {event.difficulty}
                   </span>
                 </div>
 
-                <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 group">
+                {/* <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 group">
                   <span>Join Event</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </button> */}
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-slate-600 mb-6">Want to suggest an event or lead a ride?</p>
-          <button className="bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
-            Propose an Event
-          </button>
-        </div>
+              {/* No Upcoming Events */}
+              {/* <div className="flex justify-center">
+                <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden flex flex-col items-center justify-center p-10 text-center max-w-md">
+                  <div className="bg-slate-100 rounded-full p-4 mb-4">
+                    <Calendar className="w-10 h-10 text-slate-500" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                    No Upcoming Events
+                  </h3>
+                  <p className="text-slate-600 max-w-xs mb-6">
+                    Stay tuned! We’re planning more rides, meetups, and events soon. Check back later.
+                  </p>
+                    <a 
+                      href="https://www.instagram.com/slugsontwowheels/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 inline-block"
+                    >
+                      Follow Us for Updates
+                    </a>
+
+                </div>
+              </div> */}
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </section>
   );

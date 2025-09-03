@@ -9,8 +9,11 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+
+
       {/* Background Image */}
-      <div 
+      {/* <div 
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: 'url(https://images.pexels.com/photos/1119796/pexels-photo-1119796.jpeg?auto=compress&cs=tinysrgb&w=1920)',
@@ -20,7 +23,26 @@ export default function Hero() {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-transparent"></div>
-      </div>
+      </div> */}
+
+        {/* If want video */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          >
+        <source src="./src/components/Media/BIKEAI.mp4" type="video/mp4" />
+      </video>
+  <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-transparent"></div>
+</div>
+
+
+
+
+
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -45,11 +67,6 @@ export default function Hero() {
             <span>Join the Ride</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
-          
-          <div className="flex items-center space-x-2 text-slate-200">
-            <Users className="w-5 h-5" />
-            <span className="font-medium">50+ Active Riders</span>
-          </div>
         </div>
       </div>
 
