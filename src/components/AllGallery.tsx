@@ -12,29 +12,60 @@ export const allGalleryImages = {
     { id: 3, type: "photo", src: importImage("20240404_190711.jpg") },
     { id: 4, type: "photo", src: importImage("20240406_202318.jpg") },
     { id: 5, type: "photo", src: importImage("20240407_132835.jpg") },
-    { id: 6, type: "photo", src: importImage("20240407_161642.jpg") },
-    { id: 7, type: "photo", src: importImage("20240407_161752.jpg") },
-    { id: 8, type: "photo", src: importImage("20240416_203824.jpg") },
-    { id: 9, type: "photo", src: importImage("20240416_205429.jpg") },
+    { id: 6, type: "photo", src: importImage("fOOD.jpg") },
+    { id: 7, type: "photo", src: importImage("20240407_161642.jpg") },
+    { id: 8, type: "photo", src: importImage("20240407_161752.jpg") },
+    { id: 9, type: "photo", src: importImage("20240407_161756.jpg") },
+    { id: 10, type: "photo", src: importImage("20240416_203824.jpg") },
+    { id: 11, type: "photo", src: importImage("20240416_205429.jpg") },
+    { id: 12, type: "photo", src: importImage("20240416_211751.jpg") },
+    { id: 13, type: "photo", src: importImage("20240604_181429.jpg") },
+    { id: 14, type: "photo", src: importImage("double zoom.png") },
+    { id: 15, type: "photo", src: importImage("image.jpg") },
+    { id: 16, type: "photo", src: importImage("NatBike.png") },
+    { id: 17, type: "photo", src: importImage("Jesus Zoom.png") },
+    { id: 18, type: "photo", src: importImage("image (2).png") },
+    { id: 19, type: "photo", src: importImage("DSC07515.jpg") },
+    { id: 20, type: "photo", src: importImage("image-1_2.jpg") },
+    { id: 21, type: "photo", src: importImage("IMG_0013.jpg") },
+    { id: 22, type: "photo", src: importImage("IMG_4527.jpg") },
   ],
   "2023": [
-    { id: 10, type: "photo", src: importImage("example2023_1.jpg") },
-    {
-      id: 11,
-      type: "album",
-      title: "Spring Ride",
-      photos: [
-        importImage("spring2023_1.jpg"),
-        importImage("spring2023_2.jpg"),
-        importImage("spring2023_3.jpg"),
-      ],
-    },
+    { id: 10, type: "photo", src: importImage("IMG_4110.jpg") },
+    // {
+    //   id: 11,
+    //   type: "album",
+    //   title: "Spring Ride",
+    //   photos: [
+    //     importImage("20240224_150842_1.jpg"),
+    //     importImage("20240402_205747.jpg"),
+    //     importImage("20240404_190711.jpg"),
+    //     importImage("20240224_150842_1.jpg"),
+    //     importImage("20240402_205747.jpg"),
+    //     importImage("20240404_190711.jpg"),
+    //     importImage("20240224_150842_1.jpg"),
+    //     importImage("20240402_205747.jpg"),
+    //     importImage("20240404_190711.jpg"),
+    //     importImage("20240224_150842_1.jpg"),
+    //     importImage("20240402_205747.jpg"),
+    //     importImage("20240404_190711.jpg"),
+    //     importImage("20240224_150842_1.jpg"),
+    //     importImage("20240402_205747.jpg"),
+    //     importImage("20240404_190711.jpg"),
+    //     importImage("20240224_150842_1.jpg"),
+    //     importImage("20240402_205747.jpg"),
+    //     importImage("20240404_190711.jpg"),
+    //     importImage("20240224_150842_1.jpg"),
+    //     importImage("20240402_205747.jpg"),
+    //     importImage("20240404_190711.jpg"),
+    //   ],
+    // },
   ],
-  // Add more years as needed...
 };
 
 export default function AllGallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedAlbum, setSelectedAlbum] = useState<{ title: string; photos: string[] } | null>(null);
 
   return (
     <section className="pt-28 pb-20 bg-slate-50 min-h-screen">
@@ -43,7 +74,7 @@ export default function AllGallery() {
           All <span className="text-emerald-600">Photos</span>
         </h2>
 
-        {/* Loop through years, sorted oldest → newest */}
+        {/* Loop through years, sorted newest → oldest */}
         {Object.entries(allGalleryImages)
           .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))
           .map(([year, images]) => (
@@ -52,15 +83,15 @@ export default function AllGallery() {
                 {year}
               </h3>
 
-              {/* Masonry grid */}
               <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
                 {images.map((image) => (
                   <div
                     key={image.id}
                     className="relative overflow-hidden rounded-xl shadow-lg group break-inside-avoid cursor-pointer"
-                    onClick={() =>
-                      image.type === "photo" && setSelectedImage(image.src)
-                    }
+                    onClick={() => {
+                      if (image.type === "photo") setSelectedImage(image.src);
+                      if (image.type === "album") setSelectedAlbum({ title: image.title, photos: image.photos });
+                    }}
                   >
                     {image.type === "photo" ? (
                       <img
@@ -69,11 +100,16 @@ export default function AllGallery() {
                         className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     ) : (
-                      <div className="bg-slate-200 p-6 text-center rounded-xl">
-                        <p className="font-medium">{image.title}</p>
-                        <p className="text-sm text-slate-600">
-                          Album ({image.photos.length} photos)
-                        </p>
+                      <div className="relative">
+                        <img
+                          src={image.photos[0]}
+                          alt={image.title}
+                          className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white">
+                          <p className="font-bold text-lg">{image.title}</p>
+                          <p className="text-sm">{image.photos.length} photos</p>
+                        </div>
                       </div>
                     )}
                   </div>
@@ -83,10 +119,49 @@ export default function AllGallery() {
           ))}
       </div>
 
-      {/* Overlay Lightbox */}
+      {/* Overlay for album */}
+      {selectedAlbum && (
+        <div
+          className="fixed inset-0 bg-white flex flex-col items-center justify-start z-40 p-6 overflow-y-auto"
+          onClick={() => setSelectedAlbum(null)}
+        >
+          {/* Close button aligned with title */}
+          <button
+            className="absolute top-28 right-6 text-black text-4xl font-bold"
+            onClick={() => setSelectedAlbum(null)}
+          >
+            ✕
+          </button>
+
+          {/* Album title */}
+          <h1 className="pt-32 pb-16 text-6xl font-bold mb-6">{selectedAlbum.title}</h1>
+
+          {/* Album photos grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-6xl">
+            {selectedAlbum.photos.map((photo, index) => (
+              <div
+                key={index}
+                className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group"
+                onClick={(e) => {
+                  e.stopPropagation(); // Prevent closing the album overlay
+                  setSelectedImage(photo);
+                }}
+              >
+                <img
+                  src={photo}
+                  alt={`Album photo ${index + 1}`}
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Overlay for single image (always on top) */}
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-[999]"
           onClick={() => setSelectedImage(null)}
         >
           <button

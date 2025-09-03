@@ -35,7 +35,7 @@ export default function Join() {
                   <p className="text-slate-300">
                     Scan the QR code or{' '}
                     <a
-                      href="https://discord.gg/YOUR_INVITE_LINK"
+                      href="https://discord.gg/9UhDwBUrhV"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-amber-400 underline hover:text-amber-300"
@@ -46,7 +46,7 @@ export default function Join() {
                   </p>
                   <div className="mt-4">
                     <img
-                      src="/qr-code.png"
+                      src="src\components\Media\qr-discord-invite-link.png"
                       alt="Discord QR Code"
                       className="w-32 h-32 rounded-lg shadow-lg border border-white/20"
                     />
@@ -88,14 +88,17 @@ export default function Join() {
             </div>
           </div>
 
-          {/* Optional Side Panel (could add image, big QR, or Discord logo here) */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 flex items-center justify-center">
-            <img
-              src="/qr-code.png"
-              alt="Join Discord QR"
-              className="w-48 h-48 rounded-xl shadow-lg border border-white/20"
-            />
-          </div>
+{/* Side Panel with Gallery Image */}
+<div className="rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center self-center -translate-y-10">
+  <img
+    src="src/components/Media/Gallery-Photos/DSC07515.jpg"
+    alt="Side Panel"
+    className="w-full h-full object-cover"
+  />
+</div>
+
+
+
         </div>
       </div>
     </section>

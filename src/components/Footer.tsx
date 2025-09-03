@@ -31,7 +31,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-amber-400" />
-                <span className="text-slate-300">SlugsOnTwoWheels@ucsc.edu</span>
+                <span className="text-slate-300">SlugsOnTwoWheels@gmail.com</span>
               </div>
             </div>
           </div>

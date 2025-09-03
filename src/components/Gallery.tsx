@@ -5,45 +5,27 @@ import { Camera, Heart, MessageCircle } from 'lucide-react';
 const galleryImages = [
   {
     id: 1,
-    src: 'https://images.pexels.com/photos/1119796/pexels-photo-1119796.jpeg?auto=compress&cs=tinysrgb&w=600',
-    title: 'Coastal Highway Adventure',
-    likes: 24,
-    comments: 8
+    src: 'src/components/Media/Gallery-Photos/20240407_161642.jpg',
   },
   {
     id: 2,
-    src: 'https://images.pexels.com/photos/1618269/pexels-photo-1618269.jpeg?auto=compress&cs=tinysrgb&w=600',
-    title: 'Mountain Ridge Expedition',
-    likes: 31,
-    comments: 12
+    src: 'src/components/Media/Gallery-Photos/double zoom.png',
   },
   {
     id: 3,
-    src: 'https://images.pexels.com/photos/1119796/pexels-photo-1119796.jpeg?auto=compress&cs=tinysrgb&w=600',
-    title: 'Group Meet at Campus',
-    likes: 45,
-    comments: 18
+    src: 'src/components/Media/Gallery-Photos/DSC08681-2.jpg',
   },
   {
     id: 4,
-    src: 'https://images.pexels.com/photos/1618269/pexels-photo-1618269.jpeg?auto=compress&cs=tinysrgb&w=600',
-    title: 'Sunset Beach Ride',
-    likes: 38,
-    comments: 15
+    src: 'src/components/Media/Gallery-Photos/IMG_4667.jpg',
   },
   {
     id: 5,
-    src: 'https://images.pexels.com/photos/1119796/pexels-photo-1119796.jpeg?auto=compress&cs=tinysrgb&w=600',
-    title: 'Redwood Forest Tour',
-    likes: 29,
-    comments: 9
+    src: 'https://images.pexels.com/photos/1119796/pexels-photo-111979.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     id: 6,
-    src: 'https://images.pexels.com/photos/1618269/pexels-photo-1618269.jpeg?auto=compress&cs=tinysrgb&w=600',
-    title: 'Santa Cruz Wharf Stop',
-    likes: 33,
-    comments: 11
+    src: 'https://images.pexels.com/photos/1618269/pexels-photo-161869.jpeg?auto=compress&cs=tinyrgb&w=600',
   }
 ];
 
