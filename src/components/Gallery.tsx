@@ -1,23 +1,23 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { Camera, Heart, MessageCircle } from 'lucide-react';
+
 
 const galleryImages = [
   {
     id: 1,
-    src: 'src/components/Media/Gallery-Photos/20240407_161642.jpg',
+    src: '/Media/Gallery-Photos/20240407_161642.jpg',
   },
   {
     id: 2,
-    src: 'src/components/Media/Gallery-Photos/IMG_4667.jpg',
+    src: 'public/Media/Gallery-Photos/IMG_4667.jpg',
   },
   {
     id: 3,
-    src: 'src/components/Media/Gallery-Photos/DSC08681-2.jpg',
+    src: './Media/Gallery-Photos/DSC08681-2.jpg',
   },
   {
     id: 4,
-    src: 'src/components/Media/Gallery-Photos/NatBike.png',
+    src: '/components/Media/Gallery-Photos/NatBike.png',
   },
   {
     id: 5,
