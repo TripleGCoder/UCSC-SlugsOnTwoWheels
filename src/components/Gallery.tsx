@@ -17,7 +17,7 @@ const galleryImages = [
   },
   {
     id: 4,
-    src: './components/Media/Gallery-Photos/NatBike.png',
+    src: './Media/Gallery-Photos/NatBike.png',
   },
   {
     id: 5,

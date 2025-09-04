@@ -32,7 +32,7 @@ export default function Header() {
           >
             <div className="w-200 h-14 flex items-center justify-center">
               <img 
-                src="src/components/Media/Logo.png"
+                src="./Media/Logo.png"
                 alt="SlugsOnTwoWheels Logo" 
                 className="w-full h-full object-contain scale-125"
               />

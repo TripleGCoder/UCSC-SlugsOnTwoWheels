@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <div className="w-14 h-14 flex items-center justify-center">
                 <img 
-                  src="src/components/Media/Logo.png"
+                  src="./Media/Logo.png"
                   alt="SlugsOnTwoWheels Logo" 
                   className="w-full h-full object-contain scale-125"
                 />
@@ -57,7 +57,7 @@ export default function Footer() {
                 className="w-12 h-12 bg-white/10 hover:bg-indigo-500 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
                 >
                 <img 
-                  src="src/components/Media/Discord-Icon.svg" 
+                  src="./Media/Discord-Icon.svg" 
                   alt="Discord" 
                   className="w-6 h-6"
                 />

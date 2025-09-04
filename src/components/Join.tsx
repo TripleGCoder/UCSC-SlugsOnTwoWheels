@@ -46,7 +46,7 @@ export default function Join() {
                   </p>
                   <div className="mt-4">
                     <img
-                      src="src\components\Media\qr-discord-invite-link.png"
+                      src="./Media/qr-discord-invite-link.png"
                       alt="Discord QR Code"
                       className="w-32 h-32 rounded-lg shadow-lg border border-white/20"
                     />
@@ -91,7 +91,7 @@ export default function Join() {
 {/* Side Panel with Gallery Image */}
 <div className="rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center self-center -translate-y-10">
   <img
-    src="src/components/Media/Gallery-Photos/DSC07515.jpg"
+    src="./Media/Gallery-Photos/DSC07515.jpg"
     alt="Side Panel"
     className="w-full h-full object-cover"
   />

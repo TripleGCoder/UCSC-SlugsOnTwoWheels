@@ -54,7 +54,7 @@ export default function About() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="\Media\all_bikers.png"
+                src="./Media/all_bikers.png"
                 alt="Group photo placeholder"
                 className="w-full h-96 object-cover"
               />

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 // Helper to import images cleanly
 const importImage = (file: string) =>
-  new URL(`./Media/Gallery-Photos/${file}`, import.meta.url).href;
+  new URL(`/public/Media/Gallery-Photos/${file}`, import.meta.url).href;
 
 // Organized gallery data by year
 export const allGalleryImages = {
