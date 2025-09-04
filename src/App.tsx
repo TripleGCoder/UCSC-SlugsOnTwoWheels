@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -12,32 +12,30 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen">
-        <Header />
+    <div className="min-h-screen">
+      <Header />
 
-        <Routes>
-          {/* Home page with sections */}
-          <Route
-            path="/UCSC-SlugsOnTwoWheels/"
-            element={
-              <>
-                <Hero />
-                <About />
-                <Gallery />
-                <Join />
-                <Events />
-              </>
-            }
-          />
+      <Routes>
+        {/* Home page */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <Gallery />
+              <Join />
+              <Events />
+            </>
+          }
+        />
 
-          {/* Full gallery page */}
-          <Route path="/all-gallery" element={<AllGallery />} />
-        </Routes>
+        {/* Full gallery page */}
+        <Route path="/all-gallery" element={<AllGallery />} />
+      </Routes>
 
-        <Footer />
-      </div>
-    </Router>
+      <Footer />
+    </div>
   );
 }
 
