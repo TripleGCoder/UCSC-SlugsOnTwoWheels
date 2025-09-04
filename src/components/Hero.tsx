@@ -21,7 +21,7 @@ export default function Hero() {
           // backgroundImage: 'url(src/components/Media/Gallery-Photos/20240416_203824.jpg)',
           // backgroundImage: 'url(src/components/Media/Gallery-Photos/DSC09074-2.jpg)',
           // backgroundImage: 'url(src/components/Media/Gallery-Photos/DSC08752.jpg)',
-          backgroundImage: 'url(src/components/Media/Gallery-Photos/Angus.jpg)',
+          backgroundImage: 'url(public/Media/Gallery-Photos/Angus.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
