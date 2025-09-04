@@ -19,7 +19,7 @@ function App() {
         <Routes>
           {/* Home page with sections */}
           <Route
-            path="/"
+            path="/UCSC-SlugsOnTwoWheels/"
             element={
               <>
                 <Hero />
