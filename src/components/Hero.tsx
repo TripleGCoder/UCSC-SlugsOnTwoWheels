@@ -13,20 +13,25 @@ export default function Hero() {
 
 
       {/* Background Image */}
-      {/* <div 
+      <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/1119796/pexels-photo-1119796.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+          // backgroundImage: 'url(src/components/Media/Gallery-Photos/image.jpg)',
+          // backgroundImage: 'url(src/components/Media/Gallery-Photos/NatBike.png)',
+          // backgroundImage: 'url(src/components/Media/Gallery-Photos/20240416_203824.jpg)',
+          // backgroundImage: 'url(src/components/Media/Gallery-Photos/DSC09074-2.jpg)',
+          // backgroundImage: 'url(src/components/Media/Gallery-Photos/DSC08752.jpg)',
+          backgroundImage: 'url(src/components/Media/Gallery-Photos/Angus.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-transparent"></div>
-      </div> */}
+      </div>
 
         {/* If want video */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      {/* <div className="absolute inset-0 z-0 overflow-hidden">
         <video
             autoPlay
             muted
@@ -37,7 +42,7 @@ export default function Hero() {
         <source src="./src/components/Media/BIKEAI.mp4" type="video/mp4" />
       </video>
   <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-transparent"></div>
-</div>
+</div> */}
 
 
 
@@ -48,6 +53,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-6">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
+              <span className="absolute inset-0 -z-10 bg-black/10 rounded-xl px-6 py-2"></span>
             <span className="text-amber-400">Slugs</span>OnTwoWheels
           </h1>
           <div className="h-1 w-32 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto mb-6"></div>

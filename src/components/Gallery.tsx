@@ -9,7 +9,7 @@ const galleryImages = [
   },
   {
     id: 2,
-    src: 'src/components/Media/Gallery-Photos/double zoom.png',
+    src: 'src/components/Media/Gallery-Photos/IMG_4667.jpg',
   },
   {
     id: 3,
@@ -17,15 +17,15 @@ const galleryImages = [
   },
   {
     id: 4,
-    src: 'src/components/Media/Gallery-Photos/IMG_4667.jpg',
+    src: 'src/components/Media/Gallery-Photos/NatBike.png',
   },
   {
     id: 5,
-    src: 'https://images.pexels.com/photos/1119796/pexels-photo-111979.jpeg?auto=compress&cs=tinysrgb&w=600',
+    src: 'src/components/Media/Gallery-Photos/Jesus Zoom.png',
   },
   {
     id: 6,
-    src: 'https://images.pexels.com/photos/1618269/pexels-photo-161869.jpeg?auto=compress&cs=tinyrgb&w=600',
+    src: 'src/components/Media/Gallery-Photos/Angus.jpg',
   }
 ];
 
@@ -52,31 +52,12 @@ export default function Gallery() {
               <div className="aspect-square overflow-hidden">
                 <img 
                   src={image.src}
-                  alt={image.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-white font-semibold text-lg mb-2">{image.title}</h3>
-                  <div className="flex items-center space-x-4 text-white/80">
-                    <div className="flex items-center space-x-1">
-                      <Heart className="w-4 h-4" />
-                      <span className="text-sm">{image.likes}</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <MessageCircle className="w-4 h-4" />
-                      <span className="text-sm">{image.comments}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Camera icon */}
-              <div className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <Camera className="w-5 h-5 text-white" />
               </div>
             </div>
           ))}
