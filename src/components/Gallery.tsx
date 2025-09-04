@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 const galleryImages = [
   {
     id: 1,
-    src: '/Media/Gallery-Photos/20240407_161642.jpg',
+    src: './Media/Gallery-Photos/20240407_161642.jpg',
   },
   {
     id: 2,
-    src: 'public/Media/Gallery-Photos/IMG_4667.jpg',
+    src: './Media/Gallery-Photos/IMG_4667.jpg',
   },
   {
     id: 3,
@@ -17,15 +17,15 @@ const galleryImages = [
   },
   {
     id: 4,
-    src: '/components/Media/Gallery-Photos/NatBike.png',
+    src: './components/Media/Gallery-Photos/NatBike.png',
   },
   {
     id: 5,
-    src: 'src/components/Media/Gallery-Photos/Jesus Zoom.png',
+    src: './Media/Gallery-Photos/Jesus Zoom.png',
   },
   {
     id: 6,
-    src: 'src/components/Media/Gallery-Photos/Angus.jpg',
+    src: './Media/Gallery-Photos/Angus.jpg',
   }
 ];
 
