@@ -6,6 +6,7 @@ const importImage = (file: string) =>
 
 // Organized gallery data by year
 export const allGalleryImages = {
+    // { id: #, type: "photo", src: importImage("") },
   "2024": [
     { id: 1, type: "photo", src: importImage("20240224_150842_1.jpg") },
     { id: 2, type: "photo", src: importImage("20240402_205747.jpg") },
@@ -29,6 +30,11 @@ export const allGalleryImages = {
     { id: 20, type: "photo", src: importImage("image-1_2.jpg") },
     { id: 21, type: "photo", src: importImage("IMG_0013.jpg") },
     { id: 22, type: "photo", src: importImage("IMG_4527.jpg") },
+    { id: 23, type: "photo", src: importImage("Angus.jpg") },
+    { id: 24, type: "photo", src: importImage("CMP_7927_edit-High-3264.jpg") },
+    { id: 25, type: "photo", src: importImage("CMP_7944_edit-High-3264.jpg") },
+    { id: 26, type: "photo", src: importImage("IMG_0135.png") },
+    { id: 27, type: "photo", src: importImage("IMG_4667.jpg") },
   ],
   "2023": [
     { id: 10, type: "photo", src: importImage("IMG_4110.jpg") },

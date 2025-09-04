@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 const galleryImages = [
   {
     id: 1,
-    src: './Media/Gallery-Photos/20240407_161642.jpg',
+    src: './Media/Gallery-Photos/CMP_7944_edit-High-3264.jpg',
+    position: "object-left",
   },
   {
     id: 2,
@@ -17,7 +18,7 @@ const galleryImages = [
   },
   {
     id: 4,
-    src: './Media/Gallery-Photos/NatBike.png',
+    src: './Media/Gallery-Photos/20240407_161642.jpg',
   },
   {
     id: 5,
@@ -25,7 +26,7 @@ const galleryImages = [
   },
   {
     id: 6,
-    src: './Media/Gallery-Photos/Angus.jpg',
+    // src: './Media/Gallery-Photos/Angus.jpg',
   }
 ];
 
@@ -50,9 +51,9 @@ export default function Gallery() {
               className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
               <div className="aspect-square overflow-hidden">
-                <img 
+               <img 
                   src={image.src}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className={`w-full h-full object-cover ${image.position} group-hover:scale-110 transition-transform duration-500`}
                 />
               </div>
               
@@ -68,6 +69,7 @@ export default function Gallery() {
         <div className="text-center mt-12">
           <Link
             to="/all-gallery"
+            onClick={() => window.scrollTo(0, 0)}
             className="bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105"
           >
             View More Photos
