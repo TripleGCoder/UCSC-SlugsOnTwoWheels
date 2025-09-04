@@ -26,7 +26,7 @@ const galleryImages = [
   },
   {
     id: 6,
-    // src: './Media/Gallery-Photos/Angus.jpg',
+    src: './Media/Gallery-Photos/20240404_190711.jpg',
   }
 ];
 
