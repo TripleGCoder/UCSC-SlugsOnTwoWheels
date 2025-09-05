@@ -75,7 +75,7 @@ export default function AllGallery() {
 
   return (
     <section className="pt-28 pb-20 bg-slate-50 min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-10 text-center">
           All <span className="text-emerald-600">Photos</span>
         </h2>
@@ -89,11 +89,11 @@ export default function AllGallery() {
                 {year}
               </h3>
 
-              <div className="columns-3 sm:columns-3 md:columns-4 gap-1 space-y-1">
+              <div className="columns-3 sm:columns-3 md:columns-4 lg:columns-5 gap-1 space-y-1">
                 {images.map((image) => (
                   <div
                     key={image.id}
-                    className="relative overflow-hidden rounded-xl shadow-lg group break-inside-avoid cursor-pointer"
+                    className="relative overflow-hidden rounded-2xl shadow-lg group break-inside-avoid cursor-pointer"
                     onClick={() => {
                       if (image.type === "photo") setSelectedImage(image.src);
                       if (image.type === "album") setSelectedAlbum({ title: image.title, photos: image.photos });
