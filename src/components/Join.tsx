@@ -89,7 +89,7 @@ export default function Join() {
           </div>
 
 {/* Side Panel with Gallery Image */}
-<div className="rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center self-center -translate-y-10">
+<div className="rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center self-center lg:-translate-y-10">
   <img
     src="./Media/Gallery-Photos/DSC07515.jpg"
     alt="Side Panel"
