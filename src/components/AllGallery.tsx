@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+ import React, { useState } from "react";
 
 // Helper to import images cleanly
 const importImage = (file: string) =>
@@ -89,7 +89,7 @@ export default function AllGallery() {
                 {year}
               </h3>
 
-              <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
+              <div className="columns-3 sm:columns-3 md:columns-4 gap-1 space-y-1">
                 {images.map((image) => (
                   <div
                     key={image.id}
