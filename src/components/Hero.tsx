@@ -52,10 +52,12 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-6">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
-              <span className="absolute inset-0 -z-10 bg-black/10 rounded-xl px-6 py-2"></span>
-            <span className="text-amber-400">Slugs</span>OnTwoWheels
-          </h1>
+         <h1 className="text-6xl sm:text-6xl md:text-7xl font-bold text-white mb-4 leading-tight">
+          <span className="block sm:inline text-amber-400">Slugs </span>
+          <span className="block sm:inline">On </span>
+          <span className="block sm:inline">Two </span>
+          <span className="block sm:inline">Wheels</span>
+        </h1>
           <div className="h-1 w-32 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto mb-6"></div>
           <p className="text-xl md:text-2xl text-slate-200 font-medium mb-2">
             UC Santa Cruz Motorcycle Community
