@@ -56,7 +56,7 @@ export default function About() {
               <img 
                 src="./Media/all_bikers.png"
                 alt="Group photo placeholder"
-                className="w-full h-96 object-cover"
+                className="h-70 w-full max-h-96 sm:h-55 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
               <div className="absolute bottom-4 left-4 text-white">

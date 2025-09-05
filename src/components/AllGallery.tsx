@@ -89,11 +89,11 @@ export default function AllGallery() {
                 {year}
               </h3>
 
-              <div className="columns-3 sm:columns-3 md:columns-4 lg:columns-5 gap-1 space-y-1">
+              <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-1 space-y-1">
                 {images.map((image) => (
                   <div
                     key={image.id}
-                    className="relative overflow-hidden rounded-2xl shadow-lg group break-inside-avoid cursor-pointer"
+                    className="relative overflow-hidden rounded-[0.5rem] shadow-lg group break-inside-avoid cursor-pointer"
                     onClick={() => {
                       if (image.type === "photo") setSelectedImage(image.src);
                       if (image.type === "album") setSelectedAlbum({ title: image.title, photos: image.photos });
