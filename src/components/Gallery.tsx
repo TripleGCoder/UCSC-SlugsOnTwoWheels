@@ -44,11 +44,11 @@ export default function Gallery() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-[0.3rem]">
           {galleryImages.map((image) => (
             <div 
               key={image.id} 
-              className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="group relative bg-white rounded-[0.5rem] overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
               <div className="aspect-square overflow-hidden">
                <img 
