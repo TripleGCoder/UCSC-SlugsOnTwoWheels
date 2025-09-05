@@ -28,7 +28,7 @@ export default function Header() {
           {/* Logo */}
           <div
             className="flex items-center space-x-2 cursor-pointer"
-            onClick={() => navigate("/UCSC-SlugsOnTwoWheels/")}
+            onClick={() => navigate("//")}
           >
             <div className="w-200 h-14 flex items-center justify-center">
               <img 
