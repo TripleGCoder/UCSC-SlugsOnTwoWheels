@@ -30,7 +30,7 @@ export default function Header() {
             className="flex items-center space-x-2 cursor-pointer"
             onClick={() => navigate("//")}
           >
-            <div className="w-200 h-14 flex items-center justify-center">
+            <div className="h-10 sm:h-12 md:h-14 flex items-center justify-center">
               <img 
                 src="./Media/Logo.png"
                 alt="SlugsOnTwoWheels Logo" 

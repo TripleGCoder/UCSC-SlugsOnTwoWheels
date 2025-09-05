@@ -52,7 +52,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-6">
-         <h1 className="text-6xl sm:text-6xl md:text-7xl font-bold text-white mb-4 leading-tight">
+         <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-white mb-4 leading-tight">
           <span className="block sm:inline text-amber-400">Slugs</span>
           <span className="block sm:inline">On</span>
           <span className="block sm:inline">Two</span>
