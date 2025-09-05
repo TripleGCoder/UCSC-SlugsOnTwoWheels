@@ -89,7 +89,7 @@ export default function AllGallery() {
                 {year}
               </h3>
 
-              <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-1 space-y-1">
+              <div className="columns-2 sm:columns-2 md:columns-4 lg:columns-5 gap-1 space-y-1">
                 {images.map((image) => (
                   <div
                     key={image.id}
